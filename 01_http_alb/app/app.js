@@ -1,6 +1,6 @@
 const express = require('express')
 const os = require("os");
-const hostname = os.hostname();
+const hostname = process.env.HOST_NAME;
 const app = express()
 
 app.get('/app', function (req, res) {
